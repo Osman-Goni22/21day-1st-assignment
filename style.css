@@ -10,7 +10,7 @@ body{
 header{
     max-width: 1000px;
     margin: 0 auto;
-    border: 2px solid green;
+   
 }
 nav>ul{
     display: flex;
@@ -38,6 +38,9 @@ ul li{
     padding: 10px 10px;
 }
 
+#btn-special{
+    background-color: orange;
+}
 
 .bold{
     font-weight: 700px;
@@ -175,10 +178,11 @@ margin-bottom: 40px;
   margin: 0 auto;
 }
 
-.portfolio-div-1 ul li{
-    background-color:rgba(0, 0, 0, 0.9) ;
+.portfolio-div-1 ul button{
     padding: 10px 16px;
-   
+    background-color: black;
+    color: white;
+    border-radius: 10px;
 }
 
 .portfolio-div-1 ul li a{
@@ -297,3 +301,194 @@ margin-bottom: 40px;
    gap: 30px;
 }
 
+/* 
+media queary starts here
+*/
+
+.hide{
+    display: none;
+}
+
+
+@media screen and (max-width:576px) {
+    nav>ul, .menu{
+        flex-direction: column;
+        margin: 0;
+        
+    }
+
+    nav ul{
+        width:100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner{
+        flex-direction: column;
+    }
+
+    .banner .banner-text{
+        width: 100%;
+       
+    }
+
+    .stl-btn{
+        width: 50%;
+    }
+
+    .banner .banner-img{
+        width:100%
+    }
+
+    .about-me{
+        flex-direction: column;
+        width: 80%;
+        margin: 40px auto;
+        gap: 40px;
+    }
+
+    .experience{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .experience .content-1{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .awards{
+        width: 100%;
+        padding: 0;
+    }
+
+    .awards .title{
+        width: 100%;
+        text-align: justify;
+    }
+
+    .awards .award-1{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .award-1-left{
+        width: 100%;
+    }
+    .awards .award-2{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .award-2-left{
+        width: 100%;
+    }
+
+    .portfolio{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .portfolio-div-1{
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    
+
+    .portfolio-div-1 ul{
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        align-items: center;
+        padding: 0;
+    }
+    .portfolio-div-2{
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+       
+    }
+
+    
+
+    .portfolio-div-2 .portfolio-2-image{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .portfolio-2-tex{
+        width: 100%;
+    }
+
+    .portfolio-div-2 .portfolio-2-text{
+        width: 100%;
+    }
+
+    
+    .portfolio-div-3{
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .portfolio-div-3 .portfolio-3-text{
+        width: 100%;
+        margin: 0;
+        text-align: justify;
+    }
+
+    .portfolio-div-3 .portfolio-3-image{
+   
+        width: 100%;
+     
+    }
+
+
+    .portfolio-div-3 .portfolio-3-image img{
+        max-width: 100%;
+        
+       }
+
+       .contact{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: justify;
+       }
+
+       .contact .div2{
+        width: 100%;
+        padding: 0;
+       }
+        .footer{
+            width: 100%;
+            padding: 0;
+        }
+       .footer ul{
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        gap: 20px;
+       }
+       
+       .footer-icon{
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+      align-items: center;
+        
+        padding: 0;
+       }
+        
+       .footer-icon img{
+         width: 30px;
+         height: 30px;
+       }
+}
